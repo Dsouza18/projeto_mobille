@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/seu_plano_de_fundo"
+    android:padding="16dp"
+    tools:context="com.jeff.primeiroapp.MainActivity"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:drawableLeft="@drawable/ic_home"
+    android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/eventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evento"
+        android:drawableLeft="@drawable/ic_event"
+        android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/favoritesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favoritos"
+        android:drawableLeft="@drawable/ic_favorites"
+    android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:drawableLeft="@drawable/ic_exit"
+    android:drawablePadding="8dp" />
+
+</RelativeLayout>
