@@ -7,49 +7,44 @@
     tools:context=".MainActivity">
 
     <!-- Imagem de plano de fundo -->
+
+    <!-- Botão Eventos -->
+
+    <!-- Botão Sair -->
+
     <ImageView
         android:id="@+id/backgroundImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/event_image"
-    android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/event_image_detail" />
 
-    <!-- Botão Home -->
-    <Button
-        android:id="@+id/btnHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
-
-    <!-- Botão Favoritos -->
-    <Button
-        android:id="@+id/btnFavorites"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Favoritos"
-        android:layout_below="@+id/btnHome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
-    <!-- Botão Eventos -->
     <Button
         android:id="@+id/btnEvents"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eventos"
-        android:layout_below="@+id/btnFavorites"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="281dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="10dp"
+        android:text="Eventos" />
 
-    <!-- Botão Sair -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sair"
         android:layout_below="@+id/btnEvents"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="31dp"
+        android:insetTop="0dp"
+        android:insetBottom="10dp"
+        android:text="Sair" />
+
 </RelativeLayout>
