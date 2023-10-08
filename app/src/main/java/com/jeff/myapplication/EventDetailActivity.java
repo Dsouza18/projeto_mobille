@@ -23,9 +23,11 @@ public class EventDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_detail);
         List<Evento> lista = new ArrayList<>();
-        for (Evento evento: lista) {
-            lista.add(new Evento(evento.getTitulo(), evento.getData()));
-        }
+
+        lista.add(new Evento("CoffeBreak","11/10/2023"));
+        lista.add(new Evento("InfoUcsal","11/10/2023"));
+        lista.add(new Evento("Cerimônia de encerramento","11/10/2023"));
+
 
         RecyclerView recyclerView = findViewById(R.id.detalhe_rv_lista);
         Adapter adapter = new Adapter(this, lista);

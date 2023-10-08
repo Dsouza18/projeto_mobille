@@ -19,17 +19,17 @@ public class Adapter extends RecyclerView.Adapter<Adapter.EventoViewHolder> {
 
 
     private Context contexto;
-    public Adapter(Context context, List lista){
+
+    public Adapter(Context context, List lista) {
         this.contexto = context;
         this.eventos = lista;
     }
 
 
-
     @NonNull
     @Override
     public EventoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(contexto).inflate(R.layout.itemlista,parent,false);
+        View view = LayoutInflater.from(contexto).inflate(R.layout.itemlista, parent, false);
         return new EventoViewHolder(view);
     }
 
